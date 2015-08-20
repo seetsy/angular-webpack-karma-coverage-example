@@ -7,28 +7,23 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 
 var appDir = path.join(__dirname, "app");
 var buildDir = path.join(__dirname, "build");
-//var bowerDir = path.join(__dirname, "bower_components");
 
 var baseConfig = {
     context: __dirname,
     entry: {
-        app: './index.js'
+        app: './index.js' // our entry point
     },
     output: {
         path: buildDir,
-        //path: appDir,
-        filename: 'bundle.js',
-        //chunkFilename: '[id].bundle.js',
+        filename: 'bundle.js', // our output location
         sourceMapFilename: "[file].map"
     },
     resolve: {
         root: [appDir]
     },
 
-    externals: {
-        //"x2js": "X2JS"
-    },
     recordsOutputPath: path.join(__dirname, "records.json"),// for webpack-dev-server Hot Code Replacement...
+    // loaders
     module: {
         loaders: [
             {
@@ -47,11 +42,9 @@ var baseConfig = {
             {
                 test: /\.(woff|woff2|ttf|eot|svg)(\?]?.*)?$/,
                 loader : 'url-loader'
-                //loader : 'file-loader?name=[name].[ext]?[hash]'
             },
             {
                 test: /\.js$/,
-                /*loader: 'ng-annotate!babel!jshint',*/
                 loader: 'ng-annotate',
                 exclude: /node_modules|bower_components/
             },
@@ -64,12 +57,7 @@ var baseConfig = {
                 loader: 'json'
             }
         ]
-        /* code coverage
-        postLoaders: [{
-            test: /\.js/,
-            exclude: /(test|node_modules|bower_components)/,
-            loader: 'istanbul-instrumenter'
-        }]*/
+
     },
     debug: false,
     plugins: [
@@ -80,13 +68,14 @@ var baseConfig = {
                 test: testMode
             }
         }),
-        new HtmlWebpackPlugin({  // Also generate a test.html
+        // uses index.html as a template for the build (outputs to /build/index.html)
+        new HtmlWebpackPlugin({
             filename: 'index.html',
             template: 'index.html',
-            inject: 'head'
+            inject: 'head' // can be head or body
         }),
 
-        // Source Map plugin for intellij happDiriness
+        // Source Map plugin for intellij happiness
         new webpack.SourceMapDevToolPlugin(
             '[file].map', null,
             "[absolute-resource-path]", "[absolute-resource-path]")
@@ -96,6 +85,7 @@ var baseConfig = {
         )*/
     ]
 };
+// Code coverage configs
 if(envMode === 'testCoverage') {
     baseConfig.module.postLoaders = [{
         test: /\.js/,

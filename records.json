@@ -1,0 +1,35 @@
+{
+  "nextFreeModuleId": 21,
+  "modules": {
+    "byIdentifier": {
+      "node_modules/istanbul-instrumenter-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/ng-annotate-loader/loader.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/index.js": 0,
+      "node_modules/istanbul-instrumenter-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/ng-annotate-loader/loader.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/includes.js": 1,
+      "node_modules/istanbul-instrumenter-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/ng-annotate-loader/loader.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/css/styles.js": 2,
+      "node_modules/style-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/css-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/bootstrap/dist/css/bootstrap.css": 3,
+      "node_modules/css-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/bootstrap/dist/css/bootstrap.css": 4,
+      "node_modules/css-loader/lib/css-base.js": 5,
+      "node_modules/url-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.eot": 6,
+      "node_modules/url-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2": 7,
+      "node_modules/url-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.woff": 8,
+      "node_modules/url-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf": 9,
+      "node_modules/url-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/bootstrap/dist/fonts/glyphicons-halflings-regular.svg": 10,
+      "node_modules/style-loader/addStyles.js": 11,
+      "node_modules/style-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/css-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/sass-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/css/index.scss": 12,
+      "node_modules/css-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/sass-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/css/index.scss": 13,
+      "node_modules/angular/index.js": 14,
+      "node_modules/angular/angular.js": 15,
+      "node_modules/angular-ui-bootstrap/index.js": 16,
+      "node_modules/angular-ui-bootstrap/ui-bootstrap-tpls.js": 17,
+      "node_modules/angular-mocks/angular-mocks.js": 18,
+      "node_modules/istanbul-instrumenter-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/ng-annotate-loader/loader.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/app/app.js": 19,
+      "node_modules/istanbul-instrumenter-loader/index.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/node_modules/ng-annotate-loader/loader.js!/Users/jeffreyseets/github/angular-webpack-karma-coverage-example/app/controller/FormController.js": 20
+    }
+  },
+  "nextFreeChunkId": 1,
+  "chunks": {
+    "byName": {
+      "app": 0
+    },
+    "byBlocks": {}
+  }
+}
