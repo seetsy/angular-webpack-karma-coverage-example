@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Angular Webpack Karma Coverage Example</title>
+</head>
+<body>
+<div id="container" ng-controller="FormController">
+    <h1>Angular Webpack Karma Coverage Example</h1>
+    <hr />
+    <tabset>
+        <tab heading="Input" >
+            <p>
+            <form class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <label>First: </label> <input type="text" ng-model="formData.firstName" required="required" ng-change="onInputChange()" />
+                    </div>
+                    <div class="col-md-3">
+                        <label>Last: </label> <input type="text" ng-model="formData.lastName" requireds="required" ng-change="onInputChange()" />
+                    </div>
+                </div>
+            </form>
+            </p>
+
+        </tab>
+        <tab heading="Output">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8">
+                        Your full name is <em>{{fullName}}</em>.
+                    </div>
+                </div>
+
+            </div>
+        </tab>
+    </tabset>
+    <hr />
+    <h3>Requirements:</h3>
+    This is a starting point for a project with the following requirements:
+    <ul>
+        <li>AngularJS</li>
+        <li>Angular Bootstrap</li>
+        <li>Webpack</li>
+        <li>Karma with Chai/Jasmine etc.</li>
+        <li>Code coverage with Istanbul</li>
+    </ul>
+    <hr />
+    <code>npm install</code><br />
+    <code>webpack</code><br />
+    <code>npm start</code><br />
+    <code>npm run test</code><br />
+    <code>npm run testCoverage</code>
+
+</div>
+</body>
+</html>
