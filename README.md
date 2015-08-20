@@ -9,6 +9,8 @@ This is a starting point for a project with the following setup:
 * Karma with Chai/Jasmine etc.
 * Code coverage with Istanbul
 
+##Usage
+
 *npm install*
 
 **webpack** - does a webpack build - outputs into /build directory
